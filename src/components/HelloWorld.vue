@@ -1,36 +1,37 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
-  </div>
+<!-- content -->
+<div id="content">
+  <div class="inner">
+    <div class="wrap dark">
+      <div class="cont dark">
+        <h1>Review</h1>
+        <div class="logo">
+          <svg fill="none" height="103" viewbox="0 0 158 103" width="158" xmlns="http://www.w3.org/2000/svg">
+            <rect fill="#D8D8D8" height="47" width="93" x="48.2072"></rect>
+            <rect fill="#D8D8D8" height="47" width="93" x="16.9158" y="55.2205"></rect>
+            <path clip-rule="evenodd" d="M141.5 46.2929L119.517 100.198L119.035 46.6085L141.5 46.2929Z" fill="#D8D8D8" fill-rule="evenodd"></path>
+            <path clip-rule="evenodd" d="M16.5881 55.8095L38.5714 1.90407L39.0528 55.4939L16.5881 55.8095Z" fill="#D8D8D8" fill-rule="evenodd"></path>
+          </svg>
+        </div>
+        <div class="login">
+          <p>
+            Login
+          </p>
+        </div>
+        <div class="signUp">
+          <a href="signUp.html">
+            <router-link to="/about">SignUp</router-link>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div><!-- /inner -->
+</div><!-- /content -->
 </template>
 
 <script>
+require('../assets/css/style.sass')
+
 export default {
   name: 'HelloWorld',
   props: {
@@ -40,19 +41,6 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+<style lang="sass">
+
 </style>
