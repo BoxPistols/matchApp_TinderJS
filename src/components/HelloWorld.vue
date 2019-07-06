@@ -5,7 +5,7 @@
     <div class="wrap dark">
       <div class="cont dark">
         <h1>Review</h1>
-        <div class="logo">
+        <div class="logo" style="margin-top: 50px;">
           <svg fill="none" height="103" viewbox="0 0 158 103" width="158" xmlns="http://www.w3.org/2000/svg">
             <rect fill="#D8D8D8" height="47" width="93" x="48.2072"></rect>
             <rect fill="#D8D8D8" height="47" width="93" x="16.9158" y="55.2205"></rect>

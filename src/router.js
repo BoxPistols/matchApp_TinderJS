@@ -26,5 +26,10 @@ export default new Router({
       name: 'login',
       component: () => import('./views/Login.vue')
     },
+    {
+      path: '/swipe',
+      name: 'swipe',
+      component: () => import('./views/Swipe.vue')
+    },
   ]
 })

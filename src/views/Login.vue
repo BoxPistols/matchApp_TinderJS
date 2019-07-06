@@ -1,16 +1,46 @@
 <template>
-
-  <div class='login'>
-    <h1>This is an login page</h1>
-  </div>
-
+<!-- content -->
+<div id="content">
+  <div class="inner">
+    <div class="wrap dark">
+      <div class="cont dark">
+        <h1>Review</h1>
+        <div class="logo" style="margin-top: 50px;">
+          <svg fill="none" height="103" viewbox="0 0 158 103" width="158" xmlns="http://www.w3.org/2000/svg">
+            <rect fill="#D8D8D8" height="47" width="93" x="48.2072"></rect>
+            <rect fill="#D8D8D8" height="47" width="93" x="16.9158" y="55.2205"></rect>
+            <path clip-rule="evenodd" d="M141.5 46.2929L119.517 100.198L119.035 46.6085L141.5 46.2929Z" fill="#D8D8D8" fill-rule="evenodd"></path>
+            <path clip-rule="evenodd" d="M16.5881 55.8095L38.5714 1.90407L39.0528 55.4939L16.5881 55.8095Z" fill="#D8D8D8" fill-rule="evenodd"></path>
+          </svg>
+        </div>
+        <div class="login">
+          <p>
+            Login
+          </p>
+        </div>
+        <div class="signUp">
+          <a href="signUp.html">
+            <router-link to="/about">SignUp</router-link>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div><!-- /inner -->
+</div><!-- /content -->
 </template>
 
+<script>
+require('../assets/css/style.sass')
 
-<style lang="css">
-
-  .login {
-    background: teal;
+export default {
+  name: 'HelloWorld',
+  props: {
+    msg: String
   }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style lang="sass">
 
 </style>

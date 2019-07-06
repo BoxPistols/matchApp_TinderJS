@@ -31,15 +31,14 @@
               <input type="text" name="" value="" placeholder="Creater Name">
             </div>
 
-            <div class="fx_center">
-              <div class="selectGroup fx_col">
+            <div class="fx_center" style="margin: 30px auto 20px;">
+
+              <div class="selectGroup fx_col" style="margin-right: 15px;">
                 <label for="age" class="tex-left">Age</label>
-                <select class="minimal" name="age">
+                <select class="minimal" name="age" type="number">
+                  <!-- v-model.option="inputOption" -->
                   <option value="年齢" disabled="disabled" selected>年齢を選択</option>
-                  <% for (var i = 18 - 1; i <= 99; i++) { %>
-                  <option value="<%= i+1 %>">
-                    <%= i+1 %>歳</option>
-                  <% } %>
+                  <option v-for="n in 100" v-bind:value="n">{{ n }}歳</option>
                 </select>
               </div>
 
@@ -59,8 +58,12 @@
                 <label for="genre" class="tex-left">Gender</label>
                 <select class="minimal" name="">
                   <option value="genre" disabled="disabled" selected>ジャンルを選択してください</option>
+                  <option value="写真">写真</option>
+                  <option value="イラスト">イラスト</option>
                   <option value="音楽">音楽</option>
                   <option value="園芸">園芸</option>
+                  <option value="文学">文学</option>
+                  <option value="演劇">演劇</option>
                   <option value="その他">その他</option>
                 </select>
               </div>
@@ -68,11 +71,14 @@
           </form>
           <!-- /.formArea -->
 
-          <div class="cancel tx_center">
-
-            <router-link to="/">Cancel</router-link>
-
+          <div class="btn cancel tx_center">
+            <router-link to="swipe">登録</router-link>
           </div>
+
+          <div class="cancel tx_center">
+            <router-link to="/">Cancel</router-link>
+          </div>
+
 
         </div>
       </div>
@@ -90,6 +96,16 @@ import SvgCamera from '@/components/SvgCamera.vue'
 export default {
   components: {
     SvgCamera
+  },
+  props: {
+    // index: {
+    //   type: Number
+    // }
+  },
+  data() {
+    return {
+      // inputIndex: this.index
+    }
   }
 }
 </script>
