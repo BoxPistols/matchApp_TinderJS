@@ -1,17 +1,37 @@
 <template>
-  <div class="home">
-    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <p>Swipe</p>
-  </div>
+<!-- content -->
+<div id="content">
+  <div class="inner">
+    <div class="wrap">
+      <div class="cont">
+
+        <Header />
+
+        <img src="../assets/images/artMain.png" alt="">
+
+        </div>
+      </div>
+    </div>
+  </div><!-- /inner -->
+</div><!-- /content -->
 </template>
 
 <script>
-// @ is an alias to /src
-import Login from '@/views/Login.vue'
+import Header from '@/components/Header.vue'
 
 export default {
   components: {
-    Login
+    Header
+  },
+  props: {
+    // index: {
+    //   type: Number
+    // }
+  },
+  data() {
+    return {
+      // inputIndex: this.index
+    }
   }
 }
 </script>
