@@ -1,5 +1,5 @@
 <template lang="html">
-  <div id="hds" class="header">
+  <div id="head" class="header">
 
     <div class="logo">
       <svg width="45" height="31" viewBox="0 0 45 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,15 +27,10 @@
 import dev from '../assets/js/dev'
 
 export default {
-  props: {
-    // index: {
-    //   type: Number
-    // }
-  },
-  data() {
-    return {
-      // inputIndex: this.index
-    }
+  mounted: function() {
+    $('#head').click(function() {
+      // alert();
+    });
   }
 }
 </script>
